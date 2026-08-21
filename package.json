@@ -1,0 +1,14 @@
+{
+  "name": "vitobot",
+  "version": "1.0.0",
+  "description": "VitoBot – intelligente Status- und Signalplattform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
+Wichtig: Wirklich alles von {
