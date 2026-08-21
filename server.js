@@ -31,9 +31,8 @@ wss.on("connection", (ws) => {
     console.log("WebSocket getrennt");
   });
 });
-
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`VitoBot läuft auf Port ${PORT}`);
 });
