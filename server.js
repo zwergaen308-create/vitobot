@@ -63,12 +63,13 @@ app.get("/", (req, res) => {
     <script>
 function sendMessage() {
   const ws = new WebSocket("wss://" + location.host);
-}ws.onopen = () => {
+ws.onopen = () => {
   ws.send("Hallo VitoBot!");
 };
+}
 </script>
     </html>
-  `);
+  );`);
 });
 wss.on("connection", (ws) => {
   console.log("WebSocket verbunden");
