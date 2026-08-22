@@ -69,7 +69,7 @@ ws.onopen = () => {
 }
 </script>
     </html>
-  );`);
+  `);
 });
 wss.on("connection", (ws) => {
   console.log("WebSocket verbunden");
