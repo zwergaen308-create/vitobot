@@ -56,11 +56,15 @@ app.get("/", (req, res) => {
       <div class="box">
         <h1>🤖 VitoBot</h1>
         <div class="status">🟢 VitoBot ist online</div>
-        <button onclick="alert('VitoBot funktioniert!')">
+        <button onclick="sendMessage()">
           VitoBot testen
         </button>
       </div>
-    </body>
+    <script>
+function sendMessage() {
+  alert("VitoBot empfängt jetzt Nachrichten!");
+}
+</script>
     </html>
   `);
 });
