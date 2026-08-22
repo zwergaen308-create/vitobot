@@ -62,8 +62,10 @@ app.get("/", (req, res) => {
       </div>
     <script>
 function sendMessage() {
-  alert("VitoBot empfängt jetzt Nachrichten!");
-}
+  const ws = new WebSocket("wss://" + location.host);
+}ws.onopen = () => {
+  ws.send("Hallo VitoBot!");
+};
 </script>
     </html>
   `);
